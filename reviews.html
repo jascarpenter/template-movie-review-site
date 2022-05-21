@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A template site for movie reviews.">
+		<meta name="keywords" content="movie reviews, film analysis">
+		<meta name="author" content="Your name here">
+		<meta property="og:image" content="./images/280/action_280.jpg" />
+		<link rel="shortcut icon" href="./images/shortcut_icon_16.png">
+		<link rel="../images/280/action_280.jpg" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<title>Movie Review Site | Reviews</title>
+	</head>
+	<body>
+		<a id="top"></a>
+		<header>
+			<nav>
+				<div class="logo"><a href="index.html">Movie Review Site</a></div>
+				<input type="checkbox" id="toggle">
+				<label for="toggle">
+					<div class="burger">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</label>
+				<ul class="navbar">
+					<li class="navlink"><a href="index.html">home</a></li>
+					<li class="navlink"><a href="reviews.html">reviews</a></li>
+					<li class="navlink"><a href="about.html">about</a></li>
+					<li class="navlink"><a href="contact.html">contact</a></li>
+					<div class="langnav">
+						<li class="lang"><a rel="alternate" href="reviews.html" hreflang="en" lang="en">EN</a></li>
+						<li class="lang"><a rel="alternate" href="ja/reviews.html" hreflang="ja" lang="ja">日本語</a></li>
+					</div>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="page-content">
+			<div class="filter-title">
+				<div class="container">
+					<div class="title-line">
+						<h1>Reviews</h1>
+						<hr>
+					</div>
+				</div>
+				<div id="sorting" class="container">
+					<h6>sort by:</h6>
+					<button class="sort active" onclick="sortNew()" tabindex="-1">upload date <i class="fas fa-sort"></i></button>
+					<button class="sort" onclick="sortYear()" tabindex="-1">film year<i class="fas fa-sort"></i></button>
+					<button class="sort" onclick="sortAbc()" tabindex="-1">alphabetical <i class="fas fa-sort"></i></button>
+				</div>
+			</div>
+			<div class="filter-hr"><hr></div>
+			<div class="filter-tags">
+				<div class="container">
+					<button onclick="showAll()" tabindex="-1">show all</button>
+				</div>
+				<div class="container">
+					<button class="tag" tabindex="-1">Canada</button>
+					<button class="tag" tabindex="-1">Chile</button>
+					<button class="tag" tabindex="-1">Denmark</button>
+					<button class="tag" tabindex="-1">France</button>
+					<button class="tag" tabindex="-1">Hong Kong</button>
+					<button class="tag" tabindex="-1">Japan</button>
+					<button class="tag" tabindex="-1">South Korea</button>
+					<button class="tag" tabindex="-1">Spain</button>
+					<button class="tag" tabindex="-1">US</button>
+					<button class="tag" tabindex="-1">UK</button>
+					<button class="tag" tabindex="-1">action</button>
+					<button class="tag" tabindex="-1">anime</button>
+					<button class="tag" tabindex="-1">classic</button>
+					<button class="tag" tabindex="-1">drama</button>
+					<button class="tag" tabindex="-1">dreamy</button>
+					<button class="tag" tabindex="-1">gritty</button>
+					<button class="tag" tabindex="-1">feel-good</button>
+					<button class="tag" tabindex="-1">funny</button>
+					<button class="tag" tabindex="-1">horror</button>
+					<button class="tag" tabindex="-1">indie</button>
+					<button class="tag" tabindex="-1">justice</button>
+					<button class="tag" tabindex="-1">lgbtq</button>
+					<button class="tag" tabindex="-1">quirky</button>
+					<button class="tag" tabindex="-1">romance</button>
+					<button class="tag" tabindex="-1">sexy</button>
+					<button class="tag" tabindex="-1">slow burn</button>
+					<button class="tag" tabindex="-1">sobering</button>
+					<button class="tag" tabindex="-1">steamy</button>
+					<button class="tag" tabindex="-1">touching</button>
+					<button class="tag" tabindex="-1">tragic</button>
+					<button class="tag" tabindex="-1">violent</button>
+					<button class="tag" tabindex="-1">weird</button>
+				</div>
+			</div>
+			<div id="galleryall" class="container">
+
+				<!-- Ghost Movie -->
+				<div class="box">
+					<a href="./reviews/ghost-movie-review.html">
+						<img src="./images/280/ghost_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">Japan</li>
+								<li class="taglink" aria-hidden="true">horror</li>
+								<li class="taglink" aria-hidden="true" style="display: none">drama</li>
+								<li class="taglink" aria-hidden="true" style="display: none">gritty</li>
+							</ul>
+							<h3>[Ghost Movie Title]</h3>
+							<h4>(2021, [Director Name])</h4>
+							<p>[Write the description of your latest film review here. The only difference in this post is using the 1080 version of the image.]</p>
+							<time datetime="2022-05-07">May 7, 2022</time>
+						</div>
+					</a>
+				</div>
+				
+				<!-- Drama Movie -->
+				<div class="box">
+					<a href="./reviews/drama-movie-review.html">
+						<img src="./images/280/drama_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">US</li>
+								<li class="taglink" aria-hidden="true">drama</li>
+								<li class="taglink" aria-hidden="true" style="display: none">sobering</li>
+								<li class="taglink" aria-hidden="true" style="display: none">slow burn</li>
+							</ul>
+							<h3>[Drama Movie Title]</h3>
+							<h4>(2021, Director Name)</h4>
+							<p>[Description] For each post edit up to 4 tags (2 are hidden), movie title, year of release, film director, description, and review date.</p>
+							<time datetime="2021-11-01">November 1, 2021</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Action Movie -->
+				<div class="box">
+					<a href="./reviews/action-movie-review.html">
+						<img src="./images/280/action_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">Denmark</li>
+								<li class="taglink" aria-hidden="true">action</li>
+								<li class="taglink" aria-hidden="true" style="display: none">gritty</li>
+								<li class="taglink" aria-hidden="true" style="display: none">violent</li>
+							</ul>
+							<h3>[Action Movie Title]</h3>
+							<h4>(2010, Director Name)</h4>
+							<p>[Description] For each post edit up to 4 tags (2 are hidden), movie title, year of release, film director, description, and review date.</p>
+							<time datetime="2020-05-13">May 13, 2020</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Classic Movie -->
+				<div class="box">
+					<a href="./reviews/classic-movie-review.html">
+						<img src="./images/280/classic_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">US</li>
+								<li class="taglink" aria-hidden="true">classic</li>
+								<li class="taglink" aria-hidden="true" style="display: none">violent</li>
+								<li class="taglink" aria-hidden="true" style="display: none">weird</li>
+							</ul>
+							<h3>[Classic Movie Title]</h3>
+							<h4>(1972, Director Name)</h4>
+							<p>[Description] For each post edit up to 4 tags (2 are hidden), movie title, year of release, film director, description, and review date.</p>
+							<time datetime="2020-04-14">April 14, 2020</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Feel-Good Movie -->
+				<div class="box">
+					<a href="./reviews/feel-good-movie-review.html">
+						<img src="./images/280/feel-good_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">Canada</li>
+								<li class="taglink" aria-hidden="true">feel-good</li>
+								<li class="taglink" aria-hidden="true" style="display: none">indie</li>
+								<li class="taglink" aria-hidden="true" style="display: none">dreamy</li>
+							</ul>
+							<h3>[Feel-Good Movie Title]</h3>
+							<h4>(2018, Director Name)</h4>
+							<p>[Description] For each post edit up to 4 tags (2 are hidden), movie title, year of release, film director, description, and review date.</p>
+							<time datetime="2020-04-07">April 7, 2020</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Sexy Movie -->
+				<div class="box">
+					<a href="./reviews/sexy-movie-review.html">
+						<img src="./images/280/sexy_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">Hong Kong</li>
+								<li class="taglink" aria-hidden="true">sexy</li>
+								<li class="taglink" aria-hidden="true" style="display: none">indie</li>
+								<li class="taglink" aria-hidden="true" style="display: none">steamy</li>
+							</ul>
+							<h3>[Sexy Movie Title]</h3>
+							<h4>(2002, Director Name)</h4>
+							<p>[Description] For each post edit up to 4 tags (2 are hidden), movie title, year of release, film director, description, and review date.</p>
+							<time datetime="2020-01-26">January 26, 2020</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Violent -->
+				<div class="box">
+					<a href="./reviews/violent-movie-review.html">
+						<img src="./images/280/violent_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">Japan</li>
+								<li class="taglink" aria-hidden="true">violent</li>
+								<li class="taglink" aria-hidden="true" style="display: none">anime</li>
+								<li class="taglink" aria-hidden="true" style="display: none">dreamy</li>
+							</ul>
+							<h3>[Violent Movie Title]</h3>
+							<h4>(2004, Director Name)</h4>
+							<p>[Description] For each post edit up to 4 tags (2 are hidden), movie title, year of release, film director, description, and review date.</p>
+							<time datetime="2018-04-14">April 14, 2018</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Horror Movie -->
+				<div class="box">
+					<a href="./reviews/horror-movie-review.html">
+						<img src="./images/280/horror_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">France</li>
+								<li class="taglink" aria-hidden="true">horror</li>
+								<li class="taglink" aria-hidden="true" style="display: none">violent</li>
+								<li class="taglink" aria-hidden="true" style="display: none">gritty</li>
+							</ul>
+							<h3>[Horror Movie Title]</h3>
+							<h4>(1999, Director Name)</h4>
+							<p>[Description] For each post edit up to 4 tags (2 are hidden), movie title, year of release, film director, description, and review date.</p>
+							<time datetime="2018-01-02">January 2, 2018</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Monster Movie -->
+				<div class="box">
+					<a href="./reviews/monster-movie-review.html">
+						<img src="./images/280/monster_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">Japan</li>
+								<li class="taglink" aria-hidden="true">monster</li>
+								<li class="taglink" aria-hidden="true" style="display: none">violent</li>
+								<li class="taglink" aria-hidden="true" style="display: none">classic</li>
+							</ul>
+							<h3>[Monster Movie Title]</h3>
+							<h4>(1986, Director Name)</h4>
+							<p>[Description] For each post edit up to 4 tags (2 are hidden), movie title, year of release, film director, description, and review date.</p>
+							<time datetime="2017-03-15">March 15, 2017</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Funny Movie -->
+				<div class="box">
+					<a href="./reviews/funny-movie-review.html">
+						<img src="./images/280/funny_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">Chile</li>
+								<li class="taglink" aria-hidden="true">funny</li>
+								<li class="taglink" aria-hidden="true" style="display: none">quirky</li>
+								<li class="taglink" aria-hidden="true" style="display: none">weird</li>
+							</ul>
+							<h3>[Funny Movie Title]</h3>
+							<h4>(1972, Director Name)</h4>
+							<p>[Description] For each post edit up to 4 tags (2 are hidden), movie title, year of release, film director, description, and review date.</p>
+							<time datetime="2017-01-19">January 19, 2017</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Dreamy Movie -->
+				<div class="box">
+					<a href="./reviews/dreamy-movie-review.html">
+						<img src="./images/280/dreamy_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">UK</li>
+								<li class="taglink" aria-hidden="true">dreamy</li>
+								<li class="taglink" aria-hidden="true" style="display: none">quirky</li>
+								<li class="taglink" aria-hidden="true" style="display: none">lgbtq</li>
+							</ul>
+							<h3>[Dreamy Movie Title]</h3>
+							<h4>(2004, [Director Name])</h4>
+							<p>[Write the description of your latest film review here. The only difference in this post is using the 1080 version of the image.]</p>
+							<time datetime="2016-12-07">December 07, 2016</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Sobering Movie -->
+				<div class="box">
+					<a href="./reviews/sobering-movie-review.html">
+						<img src="./images/280/sobering_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">Spain</li>
+								<li class="taglink" aria-hidden="true">sobering</li>
+								<li class="taglink" aria-hidden="true" style="display: none">drama</li>
+								<li class="taglink" aria-hidden="true" style="display: none">justice</li>
+							</ul>
+							<h3>[Sobering Movie Title]</h3>
+							<h4>(1998, [Director Name])</h4>
+							<p>[Write the description of your latest film review here. The only difference in this post is using the 1080 version of the image.]</p>
+							<time datetime="2016-11-22">November 22, 2016</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Gritty Movie -->
+				<div class="box">
+					<a href="./reviews/gritty-movie-review.html">
+						<img src="./images/280/gritty_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">South Korea</li>
+								<li class="taglink" aria-hidden="true">gritty</li>
+								<li class="taglink" aria-hidden="true" style="display: none">drama</li>
+								<li class="taglink" aria-hidden="true" style="display: none">violent</li>
+							</ul>
+							<h3>[Gritty Movie Title]</h3>
+							<h4>(2015, [Director Name])</h4>
+							<p>[Write the description of your latest film review here. The only difference in this post is using the 1080 version of the image.]</p>
+							<time datetime="2016-10-27">October 27, 2016</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- LGBTQ Movie -->
+				<div class="box">
+					<a href="./reviews/lgbtq-movie-review.html">
+						<img src="./images/280/lgbtq_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">US</li>
+								<li class="taglink" aria-hidden="true">lgbtq</li>
+								<li class="taglink" aria-hidden="true" style="display: none">drama</li>
+								<li class="taglink" aria-hidden="true" style="display: none">romance</li>
+							</ul>
+							<h3>[LGBTQ Movie Title]</h3>
+							<h4>(2017, [Director Name])</h4>
+							<p>[Write the description of your latest film review here. The only difference in this post is using the 1080 version of the image.]</p>
+							<time datetime="2016-09-20">September 20, 2016</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Magical Movie -->
+				<div class="box">
+					<a href="./reviews/magical-movie-review.html">
+						<img src="./images/280/magical_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">UK</li>
+								<li class="taglink" aria-hidden="true">magical</li>
+								<li class="taglink" aria-hidden="true" style="display: none">feel-good</li>
+								<li class="taglink" aria-hidden="true" style="display: none">action</li>
+							</ul>
+							<h3>[Magical Movie Title]</h3>
+							<h4>(2020, [Director Name])</h4>
+							<p>[Write the description of your latest film review here. The only difference in this post is using the 1080 version of the image.]</p>
+							<time datetime="2016-09-12">September 12, 2016</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- template 
+				<div class="box">
+					<a href="./reviews/sonatine.html" target="_self">
+						<img src="./images/ss/000-default.jpg" alt="">
+						<div class="box-pic">
+							<img src="./images/previews/000-default.jpg" alt="">
+						</div>
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">[tag]</a></li>
+								<li class="taglink" aria-hidden="true">[tag]</a></li>
+								<li class="taglink" aria-hidden="true" style="display: none">[tag]</li>
+								<li class="taglink" aria-hidden="true" style="display: none">[tag]</li>
+							</ul>
+							<h3>[title]</h3>
+							<h4>([date, director])</h4>
+							<p>[description]</p>
+							<time datetime="[date]">[date]</time>
+						</div>
+					</a>
+				</div> -->
+			</div>
+			<div id="page-nav">
+				<div class="top-nav">
+					<ul class="more">
+						<a href="#top"><i class="fas fa-angle-up"></i><p>top</p></a>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<div class="buffer"></div>
+
+		<footer>
+			<a href="fair-use.html"><p>Fair Use Notice</p></a>
+			<p>All Rights Reserved &copy; 2022 Company Name</p>
+		</footer>
+
+		<script src="js/gallery.js"></script>
+		</body>
+</html>

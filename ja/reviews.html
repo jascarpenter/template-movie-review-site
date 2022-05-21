@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="映画レビューテンプレートのサイト">
+		<meta name="keywords" content="映画レビュー">
+		<meta name="author" content="会社名">
+		<meta property="og:image" content="../images/280/action_280.jpg" />
+		<link rel="shortcut icon" href="../images/shortcut_icon_16.png">
+		<link rel="../images/280/action_280.jpg" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<title>映画レビューサイト | 映画レビュー</title>
+	</head>
+	<body>
+		<a id="top"></a>
+		<header>
+			<nav>
+				<div class="logo"><a href="index.html">映画レビューサイト</a></div>
+				<input type="checkbox" id="toggle">
+				<label for="toggle">
+					<div class="burger">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</label>
+				<ul class="navbar">
+					<li class="navlink"><a href="index.html">ホーム</a></li>
+					<li class="navlink"><a href="reviews.html">映画レビュー</a></li>
+					<li class="navlink"><a href="about.html">概要</a></li>
+					<li class="navlink"><a href="contact.html">問い合わせ</a></li>
+					<div class="langnav">
+						<li class="lang"><a rel="alternate" href="../reviews.html" hreflang="en" lang="en">EN</a></li>
+						<li class="lang"><a rel="alternate" href="reviews.html" hreflang="ja" lang="ja">日本語</a></li>
+					</div>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="page-content">
+			<div class="filter-title">
+				<div class="container">
+					<div class="title-line">
+						<h1>映画レビュー</h1>
+						<hr>
+					</div>
+				</div>
+				<div id="sorting" class="container">
+					<h6>並べ替え</h6>
+					<button class="sort active" onclick="sortNew()" tabindex="-1">アップロード日 <i class="fas fa-sort"></i></button>
+					<button class="sort" onclick="sortYear()" tabindex="-1">リリース日 <i class="fas fa-sort"></i></button>
+					<button class="sort" onclick="sortAbc()" tabindex="-1">アルファベット順 <i class="fas fa-sort"></i></button>
+				</div>
+			</div>
+			<div class="filter-hr"><hr></div>
+			<div class="filter-tags">
+				<div class="container">
+					<button onclick="showAll()" tabindex="-1">全て</button>
+				</div>
+				<div class="container">
+					<button class="tag" tabindex="-1">アメリカ</button>
+					<button class="tag" tabindex="-1">イギリス</button>
+					<button class="tag" tabindex="-1">カナダ</button>
+					<button class="tag" tabindex="-1">韓国</button>
+					<button class="tag" tabindex="-1">スペイン</button>
+					<button class="tag" tabindex="-1">チリ</button>
+					<button class="tag" tabindex="-1">デンマーク</button>
+					<button class="tag" tabindex="-1">日本</button>
+					<button class="tag" tabindex="-1">フランス</button>
+					<button class="tag" tabindex="-1">香港</button>
+					<button class="tag" tabindex="-1">LGBTQ</button>
+					<button class="tag" tabindex="-1">アクション</button>
+					<button class="tag" tabindex="-1">アニメ</button>
+					<button class="tag" tabindex="-1">インディペンデント</button>
+					<button class="tag" tabindex="-1">クラシック</button>
+					<button class="tag" tabindex="-1">コメディ</button>
+					<button class="tag" tabindex="-1">社会派</button>
+					<button class="tag" tabindex="-1">スローシネマ</button>
+					<button class="tag" tabindex="-1">政治</button>
+					<button class="tag" tabindex="-1">セクシー</button>
+					<button class="tag" tabindex="-1">ドラマ</button>
+					<button class="tag" tabindex="-1">ドリーミー</button>
+					<button class="tag" tabindex="-1">犯罪</button>
+					<button class="tag" tabindex="-1">ファミリー</button>
+					<button class="tag" tabindex="-1">ファンタジー</button>
+					<button class="tag" tabindex="-1">風変わりな</button>
+					<button class="tag" tabindex="-1">変な</button>
+					<button class="tag" tabindex="-1">ホラー</button>
+					<button class="tag" tabindex="-1">怪物</button>
+					<button class="tag" tabindex="-1">ピンク</button>
+					<button class="tag" tabindex="-1">マーシャルアーツ</button>
+					<button class="tag" tabindex="-1">ロマンス</button>
+				</div>
+			</div>
+			<div id="galleryall" class="container">
+
+				<!-- Ghost Movie -->
+				<div class="box">
+					<a href="./reviews/ghost-movie-review.html">
+						<img src="../images/280/ghost_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">日本</li>
+								<li class="taglink" aria-hidden="true">ホラー</li>
+								<li class="taglink" aria-hidden="true" style="display: none">ドラマ</li>
+								<li class="taglink" aria-hidden="true" style="display: none">犯罪</li>
+							</ul>
+							<h3>[ゴースト映画名]</h3>
+							<h4>(2021, [監督名])</h4>
+							<p>[紹介文] それぞれの投稿は四つのタグまで（二つのタグは隠れています）編集ができます。　映画名、リリース日、監督名、紹介文、レビュー日も編集ができます。</p>
+							<time datetime="2022-05-07">2022年5月7日</time>
+						</div>
+					</a>
+				</div>
+				
+				<!-- Drama Movie -->
+				<div class="box">
+					<a href="./reviews/drama-movie-review.html">
+						<img src="../images/280/drama_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">アメリカ</li>
+								<li class="taglink" aria-hidden="true">ドラマ</li>
+								<li class="taglink" aria-hidden="true" style="display: none">社会派</li>
+								<li class="taglink" aria-hidden="true" style="display: none">スローシネマ</li>
+							</ul>
+							<h3>[ドラマ映画名]</h3>
+							<h4>(2021, [監督名])</h4>
+							<p>[紹介文] それぞれの投稿は四つのタグまで（二つのタグは隠れています）編集ができます。　映画名、リリース日、監督名、紹介文、レビュー日も編集ができます。</p>
+							<time datetime="2021-11-01">2021年11月1日</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Action Movie -->
+				<div class="box">
+					<a href="./reviews/action-movie-review.html">
+						<img src="../images/280/action_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">デンマーク</li>
+								<li class="taglink" aria-hidden="true">アクション</li>
+								<li class="taglink" aria-hidden="true" style="display: none">犯罪</li>
+								<li class="taglink" aria-hidden="true" style="display: none">マーシャルアーツ</li>
+							</ul>
+							<h3>[アクション映画名]</h3>
+							<h4>(2010, [監督名])</h4>
+							<p>[紹介文] それぞれの投稿は四つのタグまで（二つのタグは隠れています）編集ができます。　映画名、リリース日、監督名、紹介文、レビュー日も編集ができます。</p>
+							<time datetime="2020-05-13">2020年5月13日</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Classic Movie -->
+				<div class="box">
+					<a href="./reviews/classic-movie-review.html">
+						<img src="../images/280/classic_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">アメリカ</li>
+								<li class="taglink" aria-hidden="true">クラシック</li>
+								<li class="taglink" aria-hidden="true" style="display: none">マーシャルアーツ</li>
+								<li class="taglink" aria-hidden="true" style="display: none">変な</li>
+							</ul>
+							<h3>[クラシック映画名]</h3>
+							<h4>(1972, [監督名])</h4>
+							<p>[紹介文] それぞれの投稿は四つのタグまで（二つのタグは隠れています）編集ができます。　映画名、リリース日、監督名、紹介文、レビュー日も編集ができます。</p>
+							<time datetime="2020-04-14">2020年4月14日</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Feel-Good Movie -->
+				<div class="box">
+					<a href="./reviews/feel-good-movie-review.html">
+						<img src="../images/280/feel-good_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">カナダ</li>
+								<li class="taglink" aria-hidden="true">ファミリー</li>
+								<li class="taglink" aria-hidden="true" style="display: none">インディペンデント</li>
+								<li class="taglink" aria-hidden="true" style="display: none">ドリーミー</li>
+							</ul>
+							<h3>[ファミリー映画名]</h3>
+							<h4>(2018, [監督名])</h4>
+							<p>[紹介文] それぞれの投稿は四つのタグまで（二つのタグは隠れています）編集ができます。　映画名、リリース日、監督名、紹介文、レビュー日も編集ができます。</p>
+							<time datetime="2020-04-07">2020年4月7日</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Sexy Movie -->
+				<div class="box">
+					<a href="./reviews/sexy-movie-review.html">
+						<img src="../images/280/sexy_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">香港</li>
+								<li class="taglink" aria-hidden="true">セクシー</li>
+								<li class="taglink" aria-hidden="true" style="display: none">インディペンデント</li>
+								<li class="taglink" aria-hidden="true" style="display: none">ピンク</li>
+							</ul>
+							<h3>[セクシー映画名]</h3>
+							<h4>(2002, [監督名])</h4>
+							<p>[紹介文] それぞれの投稿は四つのタグまで（二つのタグは隠れています）編集ができます。　映画名、リリース日、監督名、紹介文、レビュー日も編集ができます。</p>
+							<time datetime="2020-01-26">2020年1月26日</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Violent -->
+				<div class="box">
+					<a href="./reviews/violent-movie-review.html">
+						<img src="../images/280/violent_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">日本</li>
+								<li class="taglink" aria-hidden="true">マーシャルアーツ</li>
+								<li class="taglink" aria-hidden="true" style="display: none">アニメ</li>
+								<li class="taglink" aria-hidden="true" style="display: none">ドリーミー</li>
+							</ul>
+							<h3>[マーシャルアーツ映画名]</h3>
+							<h4>(2004, [監督名])</h4>
+							<p>[紹介文] それぞれの投稿は四つのタグまで（二つのタグは隠れています）編集ができます。　映画名、リリース日、監督名、紹介文、レビュー日も編集ができます。</p>
+							<time datetime="2018-04-14">2018年4月14日</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Horror Movie -->
+				<div class="box">
+					<a href="./reviews/horror-movie-review.html">
+						<img src="../images/280/horror_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">フランス</li>
+								<li class="taglink" aria-hidden="true">ホラー</li>
+								<li class="taglink" aria-hidden="true" style="display: none">マーシャルアーツ</li>
+								<li class="taglink" aria-hidden="true" style="display: none">犯罪</li>
+							</ul>
+							<h3>[ホラー映画名]</h3>
+							<h4>(1999, [監督名])</h4>
+							<p>[紹介文] それぞれの投稿は四つのタグまで（二つのタグは隠れています）編集ができます。　映画名、リリース日、監督名、紹介文、レビュー日も編集ができます。</p>
+							<time datetime="2018-01-02">2018年1月2日</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Monster Movie -->
+				<div class="box">
+					<a href="./reviews/monster-movie-review.html">
+						<img src="../images/280/monster_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">日本</li>
+								<li class="taglink" aria-hidden="true">怪物</li>
+								<li class="taglink" aria-hidden="true" style="display: none">マーシャルアーツ</li>
+								<li class="taglink" aria-hidden="true" style="display: none">クラシック</li>
+							</ul>
+							<h3>[怪物映画‎名]</h3>
+							<h4>(1986, [監督名])</h4>
+							<p>[紹介文] それぞれの投稿は四つのタグまで（二つのタグは隠れています）編集ができます。　映画名、リリース日、監督名、紹介文、レビュー日も編集ができます。</p>
+							<time datetime="2017-03-15">2017年3月15日</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Funny Movie -->
+				<div class="box">
+					<a href="./reviews/funny-movie-review.html">
+						<img src="../images/280/funny_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">チリ</li>
+								<li class="taglink" aria-hidden="true">コメディ</li>
+								<li class="taglink" aria-hidden="true" style="display: none">風変わりな</li>
+								<li class="taglink" aria-hidden="true" style="display: none">変な</li>
+							</ul>
+							<h3>[コメディ映画名]</h3>
+							<h4>(1972, [監督名])</h4>
+							<p>[紹介文] それぞれの投稿は四つのタグまで（二つのタグは隠れています）編集ができます。　映画名、リリース日、監督名、紹介文、レビュー日も編集ができます。</p>
+							<time datetime="2017-01-19">2017年1月19日</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Dreamy Movie -->
+				<div class="box">
+					<a href="./reviews/dreamy-movie-review.html">
+						<img src="../images/280/dreamy_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">イギリス</li>
+								<li class="taglink" aria-hidden="true">ドリーミー</li>
+								<li class="taglink" aria-hidden="true" style="display: none">風変わりな</li>
+								<li class="taglink" aria-hidden="true" style="display: none">LGBTQ</li>
+							</ul>
+							<h3>[ドリーミー映画名]</h3>
+							<h4>(2004, [監督名])</h4>
+							<p>[紹介文] それぞれの投稿は四つのタグまで（二つのタグは隠れています）編集ができます。　映画名、リリース日、監督名、紹介文、レビュー日も編集ができます。</p>
+							<time datetime="2016-12-07">2017年1月19日</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Sobering Movie -->
+				<div class="box">
+					<a href="./reviews/sobering-movie-review.html">
+						<img src="../images/280/sobering_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">スペイン</li>
+								<li class="taglink" aria-hidden="true">社会派</li>
+								<li class="taglink" aria-hidden="true" style="display: none">ドラマ</li>
+								<li class="taglink" aria-hidden="true" style="display: none">政治</li>
+							</ul>
+							<h3>[社会派映画名]</h3>
+							<h4>(1998, [監督名])</h4>
+							<p>[紹介文] それぞれの投稿は四つのタグまで（二つのタグは隠れています）編集ができます。　映画名、リリース日、監督名、紹介文、レビュー日も編集ができます。</p>
+							<time datetime="2016-11-22">2016年11月22日</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Gritty Movie -->
+				<div class="box">
+					<a href="./reviews/gritty-movie-review.html">
+						<img src="../images/280/gritty_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">韓国</li>
+								<li class="taglink" aria-hidden="true">犯罪</li>
+								<li class="taglink" aria-hidden="true" style="display: none">ドラマ</li>
+								<li class="taglink" aria-hidden="true" style="display: none">マーシャルアーツ</li>
+							</ul>
+							<h3>[犯罪映画名]</h3>
+							<h4>(2015, [監督名])</h4>
+							<p>[紹介文] それぞれの投稿は四つのタグまで（二つのタグは隠れています）編集ができます。　映画名、リリース日、監督名、紹介文、レビュー日も編集ができます。</p>
+							<time datetime="2016-10-27">2016年10月27日</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- LGBTQ Movie -->
+				<div class="box">
+					<a href="./reviews/lgbtq-movie-review.html">
+						<img src="../images/280/lgbtq_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">アメリカ</li>
+								<li class="taglink" aria-hidden="true">LGBTQ</li>
+								<li class="taglink" aria-hidden="true" style="display: none">ドラマ</li>
+								<li class="taglink" aria-hidden="true" style="display: none">ロマンス</li>
+							</ul>
+							<h3>[LGBTQ映画名]</h3>
+							<h4>(2017, [監督名])</h4>
+							<p>[紹介文] それぞれの投稿は四つのタグまで（二つのタグは隠れています）編集ができます。　映画名、リリース日、監督名、紹介文、レビュー日も編集ができます。</p>
+							<time datetime="2016-09-20">2016年9月20日</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- Magical Movie -->
+				<div class="box">
+					<a href="./reviews/magical-movie-review.html">
+						<img src="../images/280/magical_280.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">イギリス</li>
+								<li class="taglink" aria-hidden="true">ファンタジー</li>
+								<li class="taglink" aria-hidden="true" style="display: none">ファミリー</li>
+								<li class="taglink" aria-hidden="true" style="display: none">アクション</li>
+							</ul>
+							<h3>[ファンタジー映画名]</h3>
+							<h4>(2020, [監督名])</h4>
+							<p>[紹介文] それぞれの投稿は四つのタグまで（二つのタグは隠れています）編集ができます。　映画名、リリース日、監督名、紹介文、レビュー日も編集ができます。</p>
+							<time datetime="2016-09-12">2016年9月12日</time>
+						</div>
+					</a>
+				</div>
+
+				<!-- template
+				<div class="box">
+					<a href="./reviews/000-template-review.html">
+						<img src="../images/280/000-default.jpg" alt="">
+						<div class="box-info">
+							<ul class="tags">
+								<li class="taglink" aria-hidden="true">[tag]</li>
+								<li class="taglink" aria-hidden="true">[tag]</li>
+								<li class="taglink" aria-hidden="true" style="display: none">[tag]</li>
+								<li class="taglink" aria-hidden="true" style="display: none">[tag]</li>
+							</ul>
+							<h3>[movie title]</h3>
+							<h4>([movie year, director])</h4>
+							<p>[movie review]</p>
+							<time datetime="yyyy-mm-dd">[review date]</time>
+						</div>
+					</a>
+				</div> 
+				-->
+			</div>
+			<div id="page-nav">
+				<div class="top-nav">
+					<ul class="more">
+						<a href="#top"><i class="fas fa-angle-up"></i><p>トップへ</p></a>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<div class="buffer"></div>
+
+		<footer>
+			<a href="fair-use.html"><p>フェアユース</p></a>
+			<p>All Rights Reserved &copy; 2022 社名</p>
+		</footer>
+
+		<script src="../js/gallery.js"></script>
+		</body>
+</html>

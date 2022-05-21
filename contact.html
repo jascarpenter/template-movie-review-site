@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A template site for movie reviews.">
+		<meta name="keywords" content="movie reviews, film analysis">
+		<meta name="author" content="Your name here">
+		<meta property="og:image" content="./images/280/action_280.jpg" />
+		<link rel="shortcut icon" href="./images/shortcut_icon_16.png">
+		<link rel="../images/280/action_280.jpg" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<title>Movie Review Site | Contact</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo"><a href="index.html">Movie Review Site</a></div>
+				<input type="checkbox" id="toggle">
+				<label for="toggle">
+					<div class="burger">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</label>
+				<ul class="navbar">
+					<li class="navlink"><a href="index.html">home</a></li>
+					<li class="navlink"><a href="reviews.html">reviews</a></li>
+					<li class="navlink"><a href="about.html">about</a></li>
+					<li class="navlink"><a href="contact.html">contact</a></li>
+					<div class="langnav">
+						<li class="lang"><a rel="alternate" href="contact.html" hreflang="en" lang="en">EN</a></li>
+						<li class="lang"><a rel="alternate" href="ja/contact.html" hreflang="ja" lang="ja">日本語</a></li>
+					</div>
+				</ul>
+			</nav>
+			<div class="nav-shadow"><div>
+		</header>
+
+		<section id="subpage">
+			<div class="container">
+				<div class="title-line">
+					<h1>Contact</h1>
+					<hr>
+				</div>
+			</div>
+			<div class="container">
+				<div class="box">
+					<div class="box-pic">
+						<img src="./images/1080/dreamy_1080.jpg">
+					</div>
+					<div class="box-info" style="width: 64%; height: 97%;">
+						<form action="./success.html" name="contact-form" class="contact-form" data-netlify-recaptcha="true" data-netlify="true" onsubmit="return required(event)">
+							<div class="form-group">
+								<label for="name" class="contact-label">Name: </label>
+								<input type="text" name="firstname" placeholder="First Name">
+								<input type="text" name="lastname" placeholder="Last Name">
+							</div>
+							<div class="form-group">
+								<label for="email" class="contact-label">Email*<p class="input-error" style="padding: 0 1%; line-height:inherit;">Please include your email</p></label>
+								<input type="email" name="email" placeholder="Enter your email">
+							</div>
+							<div class="form-group">
+								<label for="subject" class="contact-label">Subject</label>
+								<input type="text" name="subject" placeholder="Enter your subject">
+							</div>
+							<div class="form-group">
+								<label for="message" class="contact-label">Message*<p class="input-error" style="padding: 0 1%; line-height:inherit;">Please include your message</p></label>
+								<textarea name="message" placeholder="Your message here" aria-multiline="true" aria-placeholder="Your message here"></textarea>
+							</div>
+							<div data-netlify-recaptcha="true"></div>
+							<p class="input-error" style="padding: 2% 0;">Please fill in the necessary fields</p>
+							<input class="submit-btn" type="submit" name="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<a href="fair-use.html"><p>Fair Use Notice</p></a>
+			<p>All Rights Reserved &copy; 2022 Company Name</p>
+		</footer>
+		<script src="js/subpage.js"></script>
+	</body>
+</html>
